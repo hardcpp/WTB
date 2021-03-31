@@ -1,0 +1,68 @@
+﻿<vertical child-control-height='false' spacing='0' pad='0'>
+  <horizontal bg='panel-top' pad-left='15' pad-right='15' horizontal-fit='PreferredSize'>
+    <text id='TournamentNameText' align='Center' font-size='4.2'/>
+  </horizontal>
+
+  <horizontal id='MessageFrame' spacing='0' pad-top='-1'>
+    <horizontal>
+      <text text=' ' font-size='5.5' align='Center'/>
+    </horizontal>
+    <horizontal id='MessageFrame_Background' bg='round-rect-panel' pad='8'>
+      <text id='MessageFrame_Text' text='Waiting for coordinator...' font-size='4.5' align='Center'/>
+    </horizontal>
+    <horizontal>
+      <text text=' ' font-size='5.5' align='Center'/>
+    </horizontal>
+  </horizontal>
+
+  <horizontal id='SongFrame' spacing='0' pad-top='1'>
+    <vertical pad-right='3'>
+      <page-button id='SongFrame_UpButton' direction='Up'></page-button>
+      <list id='SongFrame_List' expand-cell='true'>
+
+      </list>
+      <page-button id='SongFrame_DownButton' direction='Down'></page-button>
+    </vertical>
+
+    <vertical pad-left='3' pad-top='9' id='SongFrame_InfoPanel' spacing='0' size-delta-x='110' size-delta-y='110' min-width='80'>
+
+    </vertical>
+
+    <horizontal ignore-layout='true'>
+      <text id='SongFrame_RemainingTimeText' font-size='4' align='Center'/>
+    </horizontal>
+  </horizontal>
+
+  <horizontal id='SongDetailFrame' spacing='0' pad-top='1'>
+    <vertical pref-height='55'>
+      <text text=' ' />
+    </vertical>
+    <vertical pad-top='2' id='SongDetailFrame_Panel'  spacing='0' size-delta-x='110' size-delta-y='110' min-width='80'>
+
+    </vertical>
+    <vertical pref-height='55'>
+      <text text=' ' />
+    </vertical>
+  </horizontal>
+
+  <horizontal id='SongPlayDetailFrame' spacing='0' pad-top='-15'>
+    <vertical pref-height='55'>
+    </vertical>
+    <vertical id='SongPlayDetailFrame_Panel' spacing='0' size-delta-x='110' size-delta-y='80' min-width='80'>
+
+    </vertical>
+    <vertical pref-height='55'>
+    </vertical>
+  </horizontal>
+
+  <modal id='ConfirmPickBanMessageModal' show-event='ConfirmPickBanMessageModal' hide-event='CloseConfirmPickBanMessageModal,CloseAllModals' move-to-center='true' size-delta-y='20' size-delta-x='90'>
+    <vertical pad='0'>
+      <text text='' id='ConfirmPickBanMessageModal_Text' font-size='4' align='Center'/>
+      <horizontal>
+        <primary-button text='Yes' id='ConfirmPickBanMessageModal_YesButton'></primary-button>
+        <button text='No' click-event='CloseConfirmPickBanMessageModal'></button>
+      </horizontal>
+    </vertical>
+  </modal>
+
+</vertical>

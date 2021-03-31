@@ -1,0 +1,15 @@
+﻿<vertical child-control-height='false'
+          xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+          xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+
+  <horizontal>
+    <text text=' ' font-size='5.5' align='Center'/>
+  </horizontal>
+  <horizontal id='background' bg='round-rect-panel' pad='8' size-delta-x='110'>
+    <text id='MessageText' text='Checking plugin version...' font-size='5.5' align='Center'/>
+  </horizontal>
+  <horizontal>
+    <primary-button id='OpenWebSite' text='Open website' />
+  </horizontal>
+
+</vertical>

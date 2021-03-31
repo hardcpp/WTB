@@ -1,0 +1,25 @@
+﻿<vertical child-control-height='false' spacing='0' pad='0'>
+  <horizontal bg='panel-top' pad-left='15' pad-right='15' horizontal-fit='PreferredSize'>
+    <text text='ScoreBoard' align='Center' font-size='4.2'/>
+  </horizontal>
+
+  <horizontal id='TypeSegmentPanel' pad-top='2' pref-height='7' pad-left='8' pad-right='8'>
+  </horizontal>
+
+  <horizontal spacing='0' pad='0'>
+    <vertical min-width='12' pref-height='10' spacing='0' pad='0' pad-right='5'>
+      <horizontal id='SegmentPanel' min-width='12' min-height='30' >
+      </horizontal>
+    </vertical>
+
+    <vertical min-width='90' spacing='0' pad='0'>
+      <page-button id='ScoreUpButton' direction='Up'></page-button>
+      <vertical id='background' bg='round-rect-panel' min-width='90' pref-height='55' spacing='0' pad='2' pad-top='1'>
+        <list id='ScoreList'>
+          <loading id='LoadingIndicator' source='#LoadingIndicator' active='false'></loading>
+        </list>
+      </vertical>
+      <page-button id='ScoreDownButton' direction='Down'></page-button>
+    </vertical>
+  </horizontal>
+</vertical>

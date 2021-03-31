@@ -1,0 +1,28 @@
+﻿<vertical child-control-height='false' spacing='0' pad='0'>
+  <horizontal bg='panel-top' pad-left='15' pad-right='15' horizontal-fit='PreferredSize'>
+    <text text='Settings' align='Center' font-size='4.2'/>
+  </horizontal>
+
+  <horizontal>
+    <text text='Submit scores on ScoreSaber' align='Center'/>
+  </horizontal>
+  <horizontal>
+    <bool-setting id='SubmitScoresToggle'></bool-setting>
+  </horizontal>
+  <horizontal>
+    <text text='Play map preview audio' align='Center'/>
+  </horizontal>
+  <horizontal>
+    <bool-setting id='PlayMapPreviewToggle'></bool-setting>
+  </horizontal>
+  <horizontal>
+    <text text='Preview volume' align='Center'/>
+  </horizontal>
+  <horizontal>
+    <increment-setting id='PreviewVolumeIncrement' min='0' max='1' increment='0.05'/>
+  </horizontal>
+
+  <horizontal min-height='40'>
+  </horizontal>
+
+</vertical>

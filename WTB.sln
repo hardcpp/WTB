@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WTB", "WTB\WTB.csproj", "{D91212A6-3C9B-433B-BCDA-3AFDAA35C1FD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AF3D4596-7228-41BD-8FAA-6F2873F6DA72} = {AF3D4596-7228-41BD-8FAA-6F2873F6DA72}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewPacker", "ViewPacker\ViewPacker.csproj", "{AF3D4596-7228-41BD-8FAA-6F2873F6DA72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D91212A6-3C9B-433B-BCDA-3AFDAA35C1FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91212A6-3C9B-433B-BCDA-3AFDAA35C1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91212A6-3C9B-433B-BCDA-3AFDAA35C1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91212A6-3C9B-433B-BCDA-3AFDAA35C1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF3D4596-7228-41BD-8FAA-6F2873F6DA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF3D4596-7228-41BD-8FAA-6F2873F6DA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF3D4596-7228-41BD-8FAA-6F2873F6DA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF3D4596-7228-41BD-8FAA-6F2873F6DA72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6718836-89B5-4AC3-A578-6C8DA4CD6B07}
+	EndGlobalSection
+EndGlobal

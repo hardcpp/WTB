@@ -1,0 +1,46 @@
+﻿<horizontal>
+
+  <vertical>
+    <horizontal pad='0'>
+      <icon-button id='TournamentList_SettingsButton' icon='WTB.Assets.SettingsIcon.png' stroke-type='Clean' pad='1'/>
+      <text text='Tournament selection' font-size='5.5' align='Center'/>
+      <icon-button id='TournamentList_RefreshButton' icon='WTB.Assets.RefreshIcon.png' stroke-type='Clean' pad='1'/>
+    </horizontal>
+
+    <page-button id='TournamentList_UpButton' direction='Up'></page-button>
+    <list id='TournamentList_List' expand-cell='true'>
+
+    </list>
+    <page-button id='TournamentList_DownButton' direction='Down'></page-button>
+  </vertical>
+
+  <vertical id='TournamentInfoPanel' anchor-min-y='0' anchor-max-y='1' spacing='0'>
+    <vertical id='TournamentInfoBackground' bg='round-rect-panel' min-width='80' min-height='70' child-align='UpperCenter' anchor-pos-y='12'>
+      <image id='TournamentBanner' ignore-layout='false' size-delta-x='80' size-delta-y='23' min-height='23' />
+
+      <horizontal pref-width='10' pad-left='2' pad-right='2' pref-height='30' spacing='0'>
+        <text id='TournamentDescription' text='Description' font-size='3' align='Top'/>
+      </horizontal>
+    </vertical>
+
+    <vertical>
+      <horizontal pad='0'>
+        <primary-button id='TournamentJoinButton' text='Join' min-width='80'></primary-button>
+      </horizontal>
+
+      <horizontal pad='0'>
+        <button id='TournamentMoreInfoButton' min-width='27' text='More info'></button>
+        <button id='TournamentDiscordButton'  min-width='27' text='Discord'></button>
+        <button id='TournamentTwitchButton'   min-width='27' text='Twitch'></button>
+      </horizontal>
+    </vertical>
+  </vertical>
+
+  <modal id='NoTournamentModal' show-event='ShowNoTournamentModal' hide-event='CloseNoTournamentModal,CloseAllModals' move-to-center='true' size-delta-y='30' size-delta-x='48'>
+    <vertical pad='0'>
+      <text text='No tournament found' font-size='5.5' align='Center'/>
+      <primary-button text='Refresh' id='NoTournamentModal_RefreshButton'></primary-button>
+    </vertical>
+  </modal>
+
+</horizontal>
